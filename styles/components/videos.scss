@@ -1,0 +1,33 @@
+.videos{
+    margin: 32px 64px;
+    display: flex;
+    flex-flow: nowrap;
+    
+    &_item{
+        width:calc(100%/3 - 24px);
+        margin-right: 36px;
+        position: relative;
+        margin-bottom: 36px;
+        
+        &:nth-child(3n){
+            margin-right: 0px;
+        }
+
+        &>img{
+            width: 100%;
+        }
+
+        span{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            cursor: pointer;
+
+            img{
+                height: 36px;
+                width: 36px;
+            }
+        }
+    }
+}

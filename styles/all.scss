@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@import "./utils/vars.scss";
+@import "./utils/mixins.scss";
+
+body {
+  background-color: $black;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: $white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+@import "./components/layout.scss";
+@import "./components/banner.scss";
+@import "./components/slider.scss";
+@import "./components/tabs.scss";
+@import "./components/about.scss";
+@import "./components/videos.scss";
+@import "./components/modal.scss";
+@import "./components/gallery.scss";
